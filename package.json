@@ -47,7 +47,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest",
     "lint": "eslint Examples/ Libraries/ bots/code-analysis-bot.js",
-    "start": "/usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --"
+    "start": "node api.js && /usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --"
   },
   "bin": {
     "react-native": "local-cli/wrong-react-native.js"
