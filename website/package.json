@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node init && node server/server.js"
   },
   "dependencies": {
     "bluebird": "^2.9.21",
